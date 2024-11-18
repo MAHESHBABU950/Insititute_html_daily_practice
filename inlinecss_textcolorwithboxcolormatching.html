@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making text color with Box color using Inline CSS</title>
+    <style>
+        .div1 {
+            border: 2px solid;
+            width: 20px; 
+            height: 20px; 
+            margin-left: 270px;
+            margin-top: 25px;
+            padding: 20px;
+            background-color: black; 
+            text-align: center;
+        }
+
+        h1:hover ~ .div1{
+            background-color: orange;
+        }
+        .orange:hover ~ .div1{
+            background-color: orange;
+        }
+        .green:hover ~ .div1{
+            background-color: green;
+        }
+        .blue:hover ~ .div1{
+            background-color: blue;
+        }
+        .yellow:hover ~ .div1{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 align="center" class="orange">Orange</h1>
+    <h1 align="center" class="green">Green</h1>
+    <h1 align="center" class="blue">Blue</h1>
+    <h1 align="center" class="yellow">Yellow</h1>
+    <div class="div1"></div>
+</body>
+</html>

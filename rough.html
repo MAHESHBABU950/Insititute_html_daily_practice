@@ -1,0 +1,461 @@
+STEPCONVERTER 
+1:popuppage/firstpage
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/d1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="254dp"
+            android:layout_height="163dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.274"
+            app:srcCompat="@drawable/temp_download" />
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="310dp"
+        android:layout_height="79dp"
+        android:text="Every Step Fuels Your Workout"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="177dp"
+            android:layout_height="58dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/orangebutton"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.823">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+2:loginpage
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_img2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginpage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_primary"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_above="@+id/card_view"
+        android:padding="20dp">
+
+        <VideoView
+            android:id="@+id/location_video"
+            android:layout_width="194dp"
+            android:layout_height="136dp"
+            android:layout_centerInParent="true"
+            android:src="@raw/run_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walk  Workout  Win"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="32sp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-15dp"
+        app:cardCornerRadius="28dp"
+        android:id="@+id/card_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="466dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/my_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Email Address"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/done_icon"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Password"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/password_icon"
+                android:inputType="textPassword" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"
+                    android:text="Remember Me" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="I forgot my password" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="32dp" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:text="Or Login with" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/facebook_logo" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/google_logo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+
+
+3:homepage
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bgimg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <TextView
+        android:id="@+id/step_count"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="655dp"
+        android:gravity="center"
+        android:text="Steps Tracker"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stepcount_target"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="604dp"
+        android:text="Step Goal: 5000"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="127dp"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="481dp"
+        android:background="@drawable/circulator"
+        android:padding="10dp"
+        android:progressDrawable="@drawable/custom_progress" />
+
+    <RelativeLayout
+        android:layout_width="202dp"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="299dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="105dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="-2dp"
+            android:src="@drawable/steps" />
+
+        <TextView
+            android:id="@+id/stepCountTextView"
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Steps :  0"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="343dp"
+            android:layout_marginBottom="273dp"
+            android:src="@drawable/distanceimg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="294dp"
+        android:layout_height="125dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="164dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="86dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/distanceimg" />
+
+        <TextView
+            android:id="@+id/distanceCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Distance :  0"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="343dp"
+            android:layout_marginBottom="273dp"
+            android:src="@drawable/distanceimg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="227dp"
+        android:layout_height="132dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="281dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="104dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/timer" />
+
+        <TextView
+            android:id="@+id/timeCountTextView"
+            android:layout_width="132dp"
+            android:layout_height="96dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="9dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Time :  0"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="343dp"
+            android:layout_marginBottom="273dp"
+            android:src="@drawable/distanceimg" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="onPauseButtonclicked"
+        android:padding="20dp"
+        android:text="Convert"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+
+
+
+
+4:moneypage
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    tools:context=".moneydonatepageFragment">
+
+    <TextView
+        android:id="@+id/moneyEarnedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="406dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Money Earned: $0.00"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
